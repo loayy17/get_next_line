@@ -18,6 +18,7 @@ int	ft_free(char *buffer, char *save)
 	free(save);
 	return (1);
 }
+
 char	*ft_line(char *remain_str)
 {
 	int		i;
@@ -104,8 +105,8 @@ char	*ft_read_save(int fd, char *save)
 
 char	*get_next_line(int fd)
 {
-	static char *remain_str;
-	char *line;
+	static char	*remain_str;
+	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 	{
